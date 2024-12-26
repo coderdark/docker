@@ -5,6 +5,9 @@
 - RUN: https://docs.docker.com/reference/cli/docker/container/run/
 - EXEC: https://docs.docker.com/reference/cli/docker/container/exec/
 
+## Linux Commands
+`echo $SHELL` to find out the shell your system is using
+
 ## Docker Commands
 
 | Description                           | Command                                                                              |
