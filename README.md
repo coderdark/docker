@@ -25,4 +25,6 @@
 | To view the docker networks           | `docker network ls`                                                                  | 
 | To execute commands in a container    | `docker exec -it <CONTAINER_NAME> <COMMAND>` (-it = interactive/tty)  Ex: `docker exec -it my_container bash` or `docker exec -it my_container /bin/sh` |
 | Remove image                          | `docker image rm <IMAGE_NAME>`                                                       |
+| Stop container                        | `docker container stop <CONTAINER_NAME>`                                             |
+| Remove container                      | `docker container rm <CONTAINER_NAME>`                                               |
 
