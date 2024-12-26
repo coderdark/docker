@@ -1,8 +1,8 @@
 # Docker
 
 ## Links For Commands
-BUILD: https://docs.docker.com/reference/cli/docker/buildx/build/
-RUN: https://docs.docker.com/reference/cli/docker/container/run/
+- BUILD: https://docs.docker.com/reference/cli/docker/buildx/build/
+- RUN: https://docs.docker.com/reference/cli/docker/container/run/
 
 ## Docker Commands
 
