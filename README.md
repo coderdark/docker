@@ -12,7 +12,7 @@
 ## Shells For OSes
 + alpine3.21  `/bin/sh` - `docker exec -it container_name /bin/sh`
 + ubuntu `bash` - `docker exec -it container_name bash`
-+ 
++ debian `bash` - `docker exec -it container_name bash`
 
 ## Docker Commands
 
