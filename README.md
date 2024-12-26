@@ -1,12 +1,17 @@
 # Docker
 
 ## Links For Commands
+- IMAGE REPOSITORY: https://hub.docker.com/search?q=&type=image
 - BUILD: https://docs.docker.com/reference/cli/docker/buildx/build/
 - RUN: https://docs.docker.com/reference/cli/docker/container/run/
 - EXEC: https://docs.docker.com/reference/cli/docker/container/exec/
 
 ## Linux Commands
 `echo $SHELL` to find out the shell your system is using
+
+## Shells For OSes
++ alpine3.21  `/bin/sh`
++ ubuntu
 
 ## Docker Commands
 
