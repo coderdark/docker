@@ -18,7 +18,7 @@
 
 | Description                           | Command                                                                              |
 |---------------------------------------|--------------------------------------------------------------------------------------|
-| List docker images                    | `docker images`                                                                      |
+| List docker images                    | `docker images` or `docker image ls`                                                 |
 | List docker containers                | `docker ps -a -s` (-a = all, shows all containers stop or running. -s = size, shows the size of the container |
 | To build the image                    | `docker build -t <IMAGE_NAME> .`  (-t = tag, to provide a name for the image)        |
 | To run the image                      | `docker run -d --rm -it -p 80:8000 --name <CONTAINER_NAME> <IMAGE_NAME>`  (-d = detach, run container in background. --rm = remove when exit. -p = publish, publishes the ports. -i = interactive, Keep STDIN open even if not attached.   Ex: `docker run -it --name <CONTAINER_NAME> <IMAGE_NAME>`                       |
