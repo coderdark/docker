@@ -22,6 +22,9 @@
 + Most containers - `cat /etc/os-release` or `lsb_release -sirc`
 + To include centos - `cat /etc/issue`
 
+## Getting The Current User In A Container
++ Run the following command: `whoami`
+
 ## Docker Commands
 
 | Description                           | Command                                                                              |
