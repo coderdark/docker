@@ -24,10 +24,12 @@
 | To run the image                      | `docker run -d --rm -it -p 80:8000 --name <CONTAINER_NAME> <IMAGE_NAME>`  (-d = detach, run container in background. --rm = remove when exit. -p = publish, publishes the ports. -i = interactive, Keep STDIN open even if not attached.   Ex: `docker run -it --name <CONTAINER_NAME> <IMAGE_NAME>`                       |
 | To view the docker networks           | `docker network ls`                                                                  | 
 | To execute commands in a container    | `docker exec -it <CONTAINER_NAME> <COMMAND>` (-it = interactive/tty)  Ex: `docker exec -it my_container bash` or `docker exec -it my_container /bin/sh` |
-| Pull image                            | `docker image pull <IMAGE_NAME>`                                                       |
+| Pull image                            | `docker image pull <IMAGE_NAME>`                                                     |
 | Remove image                          | `docker image rm <IMAGE_NAME>`                                                       |
 | Prune ALL unused images               | `docker image prune`                                                                 |
 | Stop container                        | `docker container stop <CONTAINER_NAME>`                                             |
+| Start container                       | `docker container start <CONTAINER_NAME>`                                            |
+| Restart container                     | `docker container restart <CONTAINER_NAME>`                                          |
 | Remove container                      | `docker container rm <CONTAINER_NAME>`                                               |
 | Prune ALL stopped containers          | `docker container prune`                                                             |
 
