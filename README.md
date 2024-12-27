@@ -6,6 +6,7 @@
 - RUN: https://docs.docker.com/reference/cli/docker/container/run/
 - EXEC: https://docs.docker.com/reference/cli/docker/container/exec/
 - IMAGE REPOSITORY: https://hub.docker.com/search?q=&type=image
+- STOP VS KILL CONTAINERS: https://www.baeldung.com/ops/docker-stop-vs-kill
 
 ## Linux Commands
 `echo $SHELL` to find out the shell your system is using
