@@ -18,6 +18,7 @@
 
 | Description                           | Command                                                                              |
 |---------------------------------------|--------------------------------------------------------------------------------------|
+| Help                                  | `docker -h` or `docker image -h` or `docker container -h`                            |
 | List docker images                    | `docker images` or `docker image ls`                                                 |
 | List docker containers                | `docker ps -a -s` (-a = all, shows all containers stop or running. -s = size, shows the size of the container |
 | To build the image                    | `docker build -t <IMAGE_NAME> .`  (-t = tag, to provide a name for the image)        |
