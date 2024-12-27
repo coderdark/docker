@@ -42,10 +42,10 @@
 ## Examples
 SIMPLE EXPRESS SETUP
 ```javascript
-FROM node:20-alpine3.21
-WORKDIR /app
-COPY package*.json ./
+FROM node:20-alpine3.21      #The image that will be used
+WORKDIR /app                 #The working directory where all your content is saved/copied
+COPY package*.json ./        #Copying the package.json and also the index.js.  There is a .dockerignore that ommits the other files.
 COPY index.js ./
-RUN npm i
-CMD ["npm", "start"]
+RUN npm i                    #Run the install command to install all dependencies of the package.json
+CMD ["npm", "start"]         #Run this command before the container runs
 ```
