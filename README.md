@@ -40,7 +40,7 @@
 | Prune ALL stopped containers          | `docker container prune`                                                             |
 
 ## Examples
-#### Simple ExpressJS Setup with 1 Step
+#### ExpressJS Setup with 1 Step
 ```javascript
 #Build and run step
 FROM node:20-alpine3.21      #The image that will be used
@@ -49,4 +49,19 @@ COPY package*.json ./        #Copying the package.json and also the index.js.  T
 COPY index.js ./
 RUN npm i                    #Run the install command to install all dependencies of the package.json
 CMD ["npm", "start"]         #Run this command before the container runs
+```
+#### Vite Setup with 2 Steps
+```javascript
+#Build
+FROM node:20 AS build_step
+WORKDIR /app
+COPY package.json .
+COPY package-lock.json .
+RUN npm ci
+COPY . .
+RUN npm run build
+
+#Run Production
+FROM nginx:alpine AS production
+COPY --from=BUILD_STEP /app/dist /usr/share/nginx/html
 ```
