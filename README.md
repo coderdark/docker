@@ -58,8 +58,7 @@ CMD ["npm", "start"]                      #Run this command before the container
 This example has all static files created by vite build command and serve by nginx.
 
 ```javascript
-#Build
-
+#Build Step
 FROM node:20 AS build_step
 WORKDIR /app
 COPY package.json .
@@ -68,7 +67,7 @@ RUN npm ci
 COPY . .
 RUN npm run build
 
-#Run Production
+#Run Step
 FROM nginx:alpine AS production
 COPY --from=BUILD_STEP /app/dist /usr/share/nginx/html
 ```
