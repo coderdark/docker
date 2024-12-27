@@ -23,7 +23,12 @@
 + To include centos - `cat /etc/issue`
 
 ## Getting The Current User In A Container
-+ Run the following command: `whoami`
++ Run the following commands: `whoami`
+
+## Getting The Working Directory In A Container
++ Run the following commands: `pwd` or `echo $HOME`
+
+
 
 ## Docker Commands
 
