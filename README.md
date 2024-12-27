@@ -32,11 +32,11 @@
 | Pull image                            | `docker image pull <IMAGE_NAME>`                                                     |
 | Remove image                          | `docker image rm <IMAGE_NAME>`                                                       |
 | Prune ALL unused images               | `docker image prune`                                                                 |
-| Kills container  (SIGKILL)            | `docker container kill <CONTAINER_NAME>`                                             |
+| Kills container  (SIGKILL)            | `docker kill <CONTAINER_NAME>` or `docker container kill <CONTAINER_NAME>`           |
 | Stop container   (SIGTERM)            | `docker container stop <CONTAINER_NAME>`                                             |
 | Start container                       | `docker container start <CONTAINER_NAME>`                                            |
 | Restart container                     | `docker container restart <CONTAINER_NAME>`                                          |
-| Remove container                      | `docker container rm <CONTAINER_NAME>`                                               |
+| Remove container                      | `docker rm <CONTAINER_NAME>` or `docker container rm <CONTAINER_NAME>`               |
 | Prune ALL stopped containers          | `docker container prune`                                                             |
 
 ## Examples
