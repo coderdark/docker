@@ -15,6 +15,7 @@
 + ubuntu `bash` - `docker exec -it container_name bash`
 + debian `bash` - `docker exec -it container_name bash`
 + centos `bash` - `docker exec -it container_name bash`
++ fedora `bash` - `docker exec -it container_name bash`
 
 ## Docker Commands
 
