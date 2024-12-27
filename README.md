@@ -39,3 +39,13 @@
 | Remove container                      | `docker container rm <CONTAINER_NAME>`                                               |
 | Prune ALL stopped containers          | `docker container prune`                                                             |
 
+## Examples
+SIMPLE EXPRESS SETUP
+```javascript
+FROM node:20-alpine3.21
+WORKDIR /app
+COPY package*.json ./
+COPY index.js ./
+RUN npm i
+CMD ["npm", "start"]
+```
