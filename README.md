@@ -40,8 +40,9 @@
 | Prune ALL stopped containers          | `docker container prune`                                                             |
 
 ## Examples
-SIMPLE EXPRESS SETUP
+#### Simple ExpressJS Setup with 1 Step
 ```javascript
+#Build and run step
 FROM node:20-alpine3.21      #The image that will be used
 WORKDIR /app                 #The working directory where all your content is saved/copied
 COPY package*.json ./        #Copying the package.json and also the index.js.  There is a .dockerignore that ommits the other files.
