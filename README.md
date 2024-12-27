@@ -23,13 +23,16 @@
 + To include centos - `cat /etc/issue`
 
 ## Getting The Current User In A Container
-+ Run the following commands: `whoami`
++ Run the following commands:
+  + `whoami`
+  + `id -nu`
+  + `logname`
 
 ## Getting The Working Directory In A Container
 + Run the following commands:
   + `pwd`
   + `echo $HOME`
-  + `cat /etc/passwd`
+  + `cat /etc/passwd` This one provides the list of users in the system and their home directories
 
 
 
