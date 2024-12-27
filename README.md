@@ -36,9 +36,14 @@
 
 ## Text Editor
 + No text editor is included in a docker container, you can use the `docker exec` command to install your favorite texteditor using...
-+ Update apt-get: `apt-get update`
-+ To install nano: `apt-get install nano`
-+ To install vim: `apt-get install vim`
+  + Update apt-get: `apt-get update`
+  + To install nano: `apt-get install nano`
+  + To install vim: `apt-get install vim`
++ If you do not want to install or cannot install an editor, do the following...
+  + Type: `cat > file_name` - this gives you a place to type in the terminal
+  + Type your text/content, leave a newline at the end of your typing/file
+  + Type: `control-d` or `control-c`
+  + Type `cat file_name` to view the content of your file
 
 ## Docker Commands
 
