@@ -45,18 +45,21 @@ This example only has an index.js with the expressjs code to run a simple server
 
 ```javascript
 #Build and run step
-FROM node:20-alpine3.21      #The image that will be used
-WORKDIR /app                 #The working directory where all your content is saved/copied
-COPY package*.json ./        #Copying the package.json and also the index.js.  There is a .dockerignore that ommits the other files.
+ARG ALPINE_VERSION=3.21
+
+FROM node:20-alpine${ALPINE_VERSION}      #The image that will be used
+WORKDIR /app                              #The working directory where all your content is saved/copied
+COPY package*.json ./                     #Copying the package.json and also the index.js.  There is a .dockerignore that ommits the other files.
 COPY index.js ./
-RUN npm i                    #Run the install command to install all dependencies of the package.json
-CMD ["npm", "start"]         #Run this command before the container runs
+RUN npm i                                 #Run the install command to install all dependencies of the package.json
+CMD ["npm", "start"]                      #Run this command before the container runs
 ```
 #### Vite Setup with 2 Steps
 This example has all static files created by vite build command and serve by nginx.
 
 ```javascript
 #Build
+
 FROM node:20 AS build_step
 WORKDIR /app
 COPY package.json .
