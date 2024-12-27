@@ -26,7 +26,10 @@
 + Run the following commands: `whoami`
 
 ## Getting The Working Directory In A Container
-+ Run the following commands: `pwd` or `echo $HOME`
++ Run the following commands:
+  + `pwd`
+  + `echo $HOME`
+  + `cat /etc/passwd`
 
 
 
