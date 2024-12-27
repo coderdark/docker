@@ -35,7 +35,10 @@
   + `cat /etc/passwd` This one provides the list of users in the system and their home directories
 
 ## Text Editor
-+ No text editor is included in a docker container, you can use the `docker exec` command to install your favorite texteditor using `apt-get update, apt-get install vim`
++ No text editor is included in a docker container, you can use the `docker exec` command to install your favorite texteditor using...
++ Update apt-get: `apt-get update`
++ To install nano: `apt-get install nano`
++ To install vim: `apt-get install vim`
 
 ## Docker Commands
 
