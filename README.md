@@ -41,6 +41,8 @@
 
 ## Examples
 #### ExpressJS Setup with 1 Step
+This example only has an index.js with the expressjs code to run a simple server.  No static content.
+
 ```javascript
 #Build and run step
 FROM node:20-alpine3.21      #The image that will be used
@@ -51,6 +53,8 @@ RUN npm i                    #Run the install command to install all dependencie
 CMD ["npm", "start"]         #Run this command before the container runs
 ```
 #### Vite Setup with 2 Steps
+This example has all static files created by vite build command and serve by nginx.
+
 ```javascript
 #Build
 FROM node:20 AS build_step
