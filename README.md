@@ -31,6 +31,7 @@
 | Pull image                            | `docker image pull <IMAGE_NAME>`                                                     |
 | Remove image                          | `docker image rm <IMAGE_NAME>`                                                       |
 | Prune ALL unused images               | `docker image prune`                                                                 |
+| Stop and remove container             | `docker container kill <CONTAINER_NAME>`                                             |
 | Stop container                        | `docker container stop <CONTAINER_NAME>`                                             |
 | Start container                       | `docker container start <CONTAINER_NAME>`                                            |
 | Restart container                     | `docker container restart <CONTAINER_NAME>`                                          |
