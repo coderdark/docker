@@ -18,6 +18,10 @@
 + centos `bash` - `docker exec -it container_name bash`
 + fedora `bash` - `docker exec -it container_name bash`
 
+## Finding OS for Containers
++ Most containers - `cat /etc/os-release` or `lsb_release -sirc`
++ To include centos - `cat /etc/issue`
+
 ## Docker Commands
 
 | Description                           | Command                                                                              |
