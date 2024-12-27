@@ -45,9 +45,9 @@ This example only has an index.js with the expressjs code to run a simple server
 
 ```javascript
 #Build and run step
-ARG ALPINE_VERSION=3.21
+ARG ALPINE_VERSION=3.21                   #declaring a variable to use later
 
-FROM node:20-alpine${ALPINE_VERSION}      #The image that will be used
+FROM node:20-alpine${ALPINE_VERSION}      #The image that will be used with the version stored in the variable above
 WORKDIR /app                              #The working directory where all your content is saved/copied
 COPY package*.json ./                     #Copying the package.json and also the index.js.  There is a .dockerignore that ommits the other files.
 COPY index.js ./
