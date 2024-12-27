@@ -33,9 +33,9 @@
 | Remove image                          | `docker image rm <IMAGE_NAME>`                                                       |
 | Prune ALL unused images               | `docker image prune`                                                                 |
 | Kills container  (SIGKILL)            | `docker kill <CONTAINER_NAME>` or `docker container kill <CONTAINER_NAME>`           |
-| Stop container   (SIGTERM)            | `docker container stop <CONTAINER_NAME>`                                             |
-| Start container                       | `docker container start <CONTAINER_NAME>`                                            |
-| Restart container                     | `docker container restart <CONTAINER_NAME>`                                          |
+| Stop container   (SIGTERM)            | `docker stop <CONTAINER_NAME>` or `docker container stop <CONTAINER_NAME>`           |
+| Start container                       | `docker start <CONTAINER_NAME>` or `docker container start <CONTAINER_NAME>`         |
+| Restart container                     | `docker restart <CONTAINER_NAME>` or `docker container restart <CONTAINER_NAME>`     |
 | Remove container                      | `docker rm <CONTAINER_NAME>` or `docker container rm <CONTAINER_NAME>`               |
 | Prune ALL stopped containers          | `docker container prune`                                                             |
 
