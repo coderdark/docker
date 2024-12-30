@@ -65,8 +65,8 @@
 | Restart container                     | `docker restart <CONTAINER_NAME>` or `docker container restart <CONTAINER_NAME>`     |
 | Remove container                      | `docker rm <CONTAINER_NAME>` or `docker container rm <CONTAINER_NAME>`               |
 | Prune ALL stopped containers          | `docker container prune`                                                             |
-| Copy a file from container to host    | `docker cp <container_name_or_id>:<path_to_file> <location_on_host_machine>` 
-ie: `docker cp ngxc:/usr/share/nginx/html/index.html .`                             |
+| Copy a file from container to host    | `docker cp <container_name_or_id>:<container_path_to_file> <host_path_to_file>`  ie: `docker cp ngxc:/usr/share/nginx/html/index.html .`                             |
+| Copy a file from host to container    | `docker cp <host_path_to_file> <container_name_or_id>:<container_path_to_file>`  ie: `docker cp ./index.html ngxc:/usr/share/nginx/html/ `                           |
 
 ## Examples
 #### ExpressJS Setup with 1 Step
