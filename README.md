@@ -53,7 +53,7 @@
 | List docker images                    | `docker images` or `docker image ls`                                                 |
 | List docker containers                | `docker ps -a -s` (-a = all, shows all containers stop or running. -s = size, shows the size of the container |
 | To build the image                    | `docker build -t <IMAGE_NAME> .`  (-t = tag, to provide a name for the image)        |
-| To run the image                      | `docker run -d --rm -it --name <CONTAINER_NAME> <IMAGE_NAME>` or `docker run -d --rm -it -p 80:8000 --name <CONTAINER_NAME> <IMAGE_NAME>`  (-d = detach, run container in background. --rm = remove when exit. -p = publish, publishes the ports. -i = interactive, Keep STDIN open even if not attached.   Ex: `docker run -it --name <CONTAINER_NAME> <IMAGE_NAME>`                       |
+| To run the image                      | `docker run -d --rm -it --name <CONTAINER_NAME> <IMAGE_NAME>` or `docker run -d --rm -it -p 80:8000 --name <CONTAINER_NAME> <IMAGE_NAME>`  (-d = detach, run container in background. --rm = remove when exit. -p = publish, publishes the ports. -i = interactive, Keep STDIN open even if not attached.   ie: `docker run -it --name <CONTAINER_NAME> <IMAGE_NAME>`                       |
 | To view the docker networks           | `docker network ls`                                                                  | 
 | To execute commands in a container    | `docker exec -it <CONTAINER_NAME> <COMMAND>` (-it = interactive/tty)  Ex: `docker exec -it my_container bash` or `docker exec -it my_container /bin/sh` |
 | Pull image                            | `docker image pull <IMAGE_NAME>`                                                     |
@@ -65,7 +65,7 @@
 | Restart container                     | `docker restart <CONTAINER_NAME>` or `docker container restart <CONTAINER_NAME>`     |
 | Remove container                      | `docker rm <CONTAINER_NAME>` or `docker container rm <CONTAINER_NAME>`               |
 | Prune ALL stopped containers          | `docker container prune`                                                             |
-| Copy a file from container to host    | `docker cp <container_name_or_id>:<path_to_file> <location_on_host_machine>`         ie: `docker cp ngxc:/usr/share/nginx/html/index.html .`                             |
+| Copy a file from container to host    | `docker cp <container_name_or_id>:<path_to_file> <location_on_host_machine>`                ie: `docker cp ngxc:/usr/share/nginx/html/index.html .`                             |
 
 ## Examples
 #### ExpressJS Setup with 1 Step
